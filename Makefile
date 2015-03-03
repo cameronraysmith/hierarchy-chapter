@@ -46,6 +46,14 @@ copydownloadsbib:
 	python ~/Downloads/bib/remove_url.py ~/Downloads/bib/papers.bib
 	python ~/Downloads/bib/remove_url.py ~/Downloads/bib/books.bib
 
+dropboxbib:
+	cp ~/Downloads/bibtex/theoreticalbiology.bib ~/Downloads/bib/papers.bib
+	cp ~/Downloads/bibtex/books.bib ~/Downloads/bib/
+	python ~/Downloads/bib/remove_url.py ~/Downloads/bib/papers.bib
+	python ~/Downloads/bib/remove_url.py ~/Downloads/bib/books.bib
+	cp ~/Downloads/bib/papers.bib ~/Dropbox/Public/bib/
+	cp ~/Downloads/bibtex/books.bib ~/Dropbox/Public/bib/
+
 linkbib:
 	ln -s ~/Downloads/bib bib
 
